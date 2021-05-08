@@ -1,0 +1,22 @@
+
+{% extends 'html/head.html' %}
+{% block title %}Home{% endblock %}
+{% block content %}
+{% load static %}
+<div class="row">
+	<div class="col-lg-2">
+		<img class="thumbnail" src="{% static 'images/pro.jpg' %}">
+	<div class="box-element product">
+		<h6>product</h6>
+		<hr>
+		<a class="btn btn-success" href="{% url 'cart' %}">Add to cart</a>
+
+		<a class="btn btn-success" href="#">View</a>
+		<h4>20$</h4>
+
+	</div>
+	
+		</div>
+	</div>
+</div>
+{% endblock %}

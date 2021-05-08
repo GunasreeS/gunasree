@@ -1,0 +1,27 @@
+{% load static %}
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <!-- Brand/logo -->
+   <a class="navbar-brand" href="#">
+    <img src="{% static 'images/shop.jpg' %}"  style="width:40px;">
+  </a>
+ 
+  <a class="navbar-brand" href="{% url 'home' %}">Ekart</a>
+  
+  <!-- Links -->
+   <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link"  href="{% url 'store' %}">Shop</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link"  href="{% url 'product' %}">Add Product</a>
+    </li>
+ </ul>
+  <ul class="navbar-nav ml-auto" style="margin-right: 180px">
+    <li class="nav-item">
+      <a class="nav-link"  href="{% url 'lg' %}">Login</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'cart' %}">Cart</a>
+    </li>
+  </ul>
+</nav>

@@ -1,0 +1,44 @@
+
+{% extends 'html/head.html' %}
+{% block title %}Home{% endblock %}
+{% block content %}
+{% load static %}
+<h4>Credit/DebitCard</h4>
+<table>
+	<tr>
+		<td>
+			<label>Card Number</label>
+			<input type="text" name="cname" placeholder="Card Number">
+		</td>
+		<td>
+			<label>CVV Number</label>
+			<input type="Number" name="cvvnum" placeholder="CVV">
+		</td>
+		<td>
+			<label>Month/Year</label>
+			<input type="date" name="date" placeholder="Month/Year">
+		</td>
+	</tr>
+</table>
+
+<h3>Your Cart</h3>
+			<table class="table table-striped table-hover table-borderless">
+				<tr class="bg-dark text-light">
+					<td>Itemtitle</td>
+					<td>price</td>
+					<td>Quantity</td>
+					<td>Amount</td>
+				</tr>
+			</table>
+		<div class="container">
+			<table>
+				<tr>
+					<td>Payable Amount:</td>
+					<td>
+						<a class="btn btn-block btn-success" href="{% url 'store' %}">Place Order</a>
+					</td>
+				</tr>
+			</table>
+		</div>
+
+{% endblock %}

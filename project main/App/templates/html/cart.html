@@ -1,0 +1,32 @@
+
+{% extends 'html/head.html' %}
+{% block title %}Home{% endblock %}
+{% block content %}
+{% load static %}
+<div class="card-body">
+			<h3 class="p-3 bg-warning text-center text-light mt-3 bord bounded">OrderSummary</h3>
+			<table class="table table-striped table-hover table-borderless">
+				<tr class="bg-dark text-light">
+					<td>Itemtitle</td>
+					<td>price</td>
+					<td>Quantity</td>
+					<td>Amount</td>
+				</tr>
+		</table>
+		</div>
+		<div class="container">
+			<table>
+				<tr>
+					<td>Order Total:</td>
+				</tr>
+			<tr>
+				<td>
+			<a  class="btn btn-block btn-primary" href="{% url 'store' %}"> Continue Shopping</a>
+		</td>
+		<td>
+			<a  class="btn btn-block btn-success" href="{% url 'checkout' %}">Proceed to Checkout</a>
+		</td>
+		</table>
+		</div>
+
+{% endblock %}

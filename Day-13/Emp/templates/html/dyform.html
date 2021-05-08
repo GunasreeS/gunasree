@@ -1,0 +1,22 @@
+{% extends 'html/header.html' %}
+{% block title %}Dynamic Form {% endblock %}
+{% block content %}
+<div class="container">
+	<div class="card col-md-7 mx-auto mt-3">
+		<h4 class="bg-warning text-center text-light p-2 border rounded mt-2">Registration</h4>
+		<div class="card-body">
+			<form method="post">
+				{% csrf_token %}
+				<table class="table table-borderless mt-1">
+					{% for k in tu %}
+					<tr>
+						<td>{{k}}</td>
+					</tr>
+					{% endfor %}
+				</table>
+				<input type="submit" value="Create" class="btn btn-success btn-block">
+			</form>
+		</div>
+	</div>
+</div>
+{% endblock %}

@@ -1,0 +1,158 @@
+Day-01[6=> 27-03-2021]:
+=======================
+	
+	-> Python checking
+		=> python -V
+	-> pip checking
+		=> pip --version
+	
+Django Installations:
+===================== 
+	-> wherever the path it is not manadatory to install django we can install it in any path
+		
+	-> pip install django => Updated django version will be installed into a system
+		=> pip install django=="version number"
+	
+Django Version Checking:
+========================
+	-> django-admin --version
+	-> python -m django --version
+	-> python shell
+		-> import django
+		-> django.get_version()
+		
+Project Creation:
+=================
+	-> Just we need to select a drive where we need to create a project
+	-> Navigate to that particular path location by using command prompt
+	-> django-admin startproject "projectname"
+	-> If project is created then we can observe the same project name and manage.py inside the project folder
+	  
+Project Execution:
+==================
+	-> First we need to navigate where manage.py is exists and then we need to enter into that particualr path location by using command prompt
+	-> python manage.py runserver
+		=> manage.py runserver
+	-> If port numbers are blocked then we can change ports by using the command as 
+		=> manage.py runserver "port number"
+	-> If we run the server the nautomatically db.sqlite3 file will be created inside the project folder
+
+Day-02[7=> 29-03-2021]:
+=======================
+	Project folder files:
+	=====================
+	- init -> just it will be considered as a python file
+	- asgi -> asynchronous gate way interface it will be used in server deployent cases
+	- wsgi -> Web Socket Gate way interface it will be used in sendin,receiving and status of online users
+	- settings -> All configurations will be done here 
+	- urls -> To check the url is present in this file to access the particular task
+
+Carona => Project folder
+	Carona => [Admin App]
+	manage.py -> services
+	
+	index => [by default display some file]
+	
+Own .html file access:
+
+User App Creation:
+==================
+	-> we need to enter into path where manage.py file exists then we need to pass the command to create an user app
+		=> django-admin startapp "user appname"
+		=> manage.py startapp "user appname"
+	-> Carona => Project folder
+		-> Carona => Admin App
+		-> CSE_Status => User App
+		-> manage.py
+		-> db.sqlite3
+-> UserApp Files:
+=================
+	- init -> It will be considered as a python file
+	- admin -> To restrict the tables to be viewed for users like admin or guests
+	- apps -> userfile configurations
+	- test -> testing => unit, black box 
+	- models -> All table creations can be done here => [Database] 
+	- views -> All logics can be implemented in this file
+
+UserApp:
+========
+	-> First step is to configure our app in settings.py file
+	-> Navigate to line where Installed_apps exists
+		INSTALLED_APPS = [
+		'........',
+		'UserApp Name',
+		]
+	
+UserApp Execution:
+==================	
+	-> response can be accessed from userapp
+	-> path:
+	========
+		path("userdefined url/",modulename.functionname,name="userdefined name),
+	urls.py:
+	========
+	-> from CSE_Status import views
+	-> path("demo/",views.sample),
+	
+	views.py:
+	========
+	-> from django.http import HttpResponse
+	
+	-> def sample(request):
+			return HttpResponse("something message")
+	
+	
+	url => views => Response
+
+	MVC and MVT:
+	============
+	
+	MVC Architecture:
+	=================
+	M -> Model [Database]
+	V -> View [.html,js,jquery]
+	C -> Controller [logic file .php, .java, .net]
+	
+	MVT Architecture:
+	=================
+	M -> Model [Database]
+	V -> View [Controller => urls,views => logic]
+	T -> Template [html,js,jquery][DTL => Django Template Language]
+
+	path('url pathname/',modulename.functionname)
+	
+	path('demo/',views.sample)
+	
+	url: localhost:8000/demo/12
+	
+	Output:	Hello 12
+	
+	path('fah/<str:r>/,',views.drt)
+	
+	
+	def drt(rq,r):
+		return HttpResponse("Hello "+r)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

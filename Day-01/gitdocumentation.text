@@ -1,0 +1,41 @@
+
+\\192.168.2.35
+
+Day-01[22-3-2021]
+=================
+
+	-> gmail
+	-> github account
+	-> Repository:[gihub]
+	-> Directory[linux,windows]
+	
+Github:
+	-> git-scm.com
+	-> While creting repository just you need to update the branch as "master" instead of main
+	-> git => command
+	-> After installing the git we need to open the path in command prompt just we need to select the option while right cliking the folder path location
+	=> git init
+	-> while using git init it will creates default branch i.e., "master"
+	
+	-> To create a file just use the command as "touch filename.extension"
+		=> touch sample.text
+	-> List of files
+		=> ls -l => list format
+		=> ls -a => hidden files of folders
+		=> ls -m => , seperated in side format
+		=> ls => files in side by side
+	-> To know the status of files or folders then we need to use the command as 
+		=> git status
+	-> git remote add remotename "online repository url link"
+		=> git remote add remotename "url"
+	-> By Default it creates a remotename as "Origin" if we no add remotename
+	-> To Check the list of remotes we need to pass the command as 
+		=> git remote
+	-> To push the offline work to online we need to push it for online repository
+	-> git push remotename branchname
+	
+	** PUSH **
+	===========
+	Offline to Online repository for particular git users account 
+	-> If we encounters an erros as fast-forward then we use the command as 
+	=> git push -f remotename branchname

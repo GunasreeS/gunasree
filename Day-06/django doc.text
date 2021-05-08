@@ -1,0 +1,278 @@
+
+Day-01[22-3-2021]
+=================
+
+	-> gmail
+	-> github account
+	-> Repository:[gihub]
+	-> Directory[linux,windows]
+	
+Github:
+	-> git-scm.com
+	-> While creting repository just you need to update the branch as "master" instead of main
+	-> git => command
+	-> After installing the git we need to open the path in command prompt just we need to select the option while right cliking the folder path location
+	=> git init
+	-> while using git init it will creates default branch i.e., "master"
+	
+	-> To create a file just use the command as "touch filename.extension"
+		=> touch sample.text
+	-> List of files
+		=> ls -l => list format
+		=> ls -a => hidden files of folders
+		=> ls -m => , seperated in side format
+		=> ls => files in side by side
+	-> To know the status of files or folders then we need to use the command as 
+		=> git status
+	-> git remote add remotename "online repository url link"
+		=> git remote add remotename "url"
+	-> By Default it creates a remotename as "Origin" if we no add remotename
+	-> To Check the list of remotes we need to pass the command as 
+		=> git remote
+	-> To push the offline work to online we need to push it for online repository
+	-> git push remotename branchname
+	-> git remote rm remotename
+	** PUSH **
+	===========
+	Offline to Online repository for particular git users account 
+	-> If we encounters an erros as fast-forward then we use the command as 
+	=> git push -f remotename branchname
+
+Day-02[23-3-2021]
+=================
+	-> git log => To know the status of file or folder to github
+	-> git log --oneline => To know the commit place for which commit it is placing
+	
+	Online -> Offline:[Pull]
+	========================
+		-> git pull remotename branchname
+	-> git remote -v => To check the urls for pull and push for a particular repository
+	
+	
+	
+	git init
+	git config user.name ""
+	git config user.email ""
+	git remote add remotename "url"
+	git add .
+	git commit -m ""
+	git push remotename branchname
+	
+	
+	
+	
+	git add .
+	git commit -m ""
+	git push remotename branchname
+	
+	Cloning a repository:
+	=====================
+	-> git clone "url" => It access all the files that is related to that project 
+	
+	Python-3:
+	=========
+	2.x
+	3.x ->
+	
+	https://github.com/AP-Skill-Development-Corporation
+	
+	Interpreter: https://python.org
+		-> python 3.7.5
+		
+	Editor: notepad
+	Advanced Editors: Notepad++,sublime,editplus,atom
+	
+	IDE's:
+	visual studio,pycharm
+	 
+Python Installation:
+======================
+	-> To check python verison
+		=> python -V
+	-> jupyter notebook installation
+		=> pip install jupyter notebook
+	-> To run jupyter notebook
+		=> python jupyter notebook
+	-> .ipynb => Interactive Python Notebook It should be open only in jupyter notebook or else in google colab
+	
+Day-03[24-3-2021]
+=================
+	-> Markdown Formats
+	-> Output format,conditional statements,control statemensts
+	-> Range,jumping statements
+	-> Data structures like list,tuple and strings
+	
+	
+Day-04[25-3-2021]
+=================
+	->Functions are of two types
+	User definde def sum()
+	                a=10
+	                b=20 
+	                c=a+b
+	                retuen c:
+	                print 
+	-return type
+	arguments 
+	predefined 
+	    def my_function():
+	    
+	    print("hii") 
+	     my_funtion()
+	fuctions:
+	reusable code
+	large code 
+	two types:
+	user defined
+	pre defined
+	4 types:
+	with argument with return
+	without argument with return
+	with argument without return
+	without argument without return
+	
+def fun():
+#statements
+return 
+
+keyword
+default
+variable length
+functions:
+large code to small code
+user
+pre
+with argument with return
+without argument with return
+with argument without return
+without argument without return
+4 types
+required
+keyword
+variable length
+default
+syntax:
+def functionname(parameters):
+	function body
+	return 
+
+Day-05[26-3-2021]:
+=================
+		-> Drive Link:
+		https://drive.google.com/drive/folders/1pF2CotfjV9C54VyCUhBFgJQBFjhQG8sU?usp=sharing
+	
+Day-06-[27-3-2021]:
+====================
+* Today objectives:
+		-> oops concepts
+			-> class
+			-> objects
+			-> inheritance
+			-> polymorphism
+* class:
+=========
+	-> collectionn of objects and methods
+	-> fun: it is collection of statements
+	-> method: it is existed in inside of a class then we 
+	call it as method
+	-> syntax:
+		class classname:
+			var1
+			var2
+			method()
+			method2()
+	
+ex:
+====
+
+class add:
+	a=20
+	b=30
+	print(a,b)
+add.a
+
+objects:
+=========
+* it is instance of class
+* blue print f class
+
+object=add
+object.a
+
+Constructor:
+=============
+__init__
+* without call function it executes
+
+Task:
+.......
+input: 50,60,70
+output: second class
+input: 45,35,46
+output: third class
+
+Task2:
+.......
+a/b
+0.121212
+0.(12)
+
+0.12341234
+0.(1234)
+
+-> Inheritance:
+================
+* one class properties extends into another class
+* parent class to child class
+	-> single level
+	-> multiple
+	-> multi level
+	-> hybrid
+
+
+* overloading
+* super()
+
+Django:
+==========
+	-> Django,flask,pyramid...etc
+	-> django installation
+	-> django introduction
+	-> project creation
+		
+			django-admin startproject projectname
+	-> run project 
+	
+		python manage.py runserver
+		
+	-> app creation
+	-> Httpresponse
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+	
+	
+	
+	
+	
+	
+	

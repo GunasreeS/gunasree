@@ -1,0 +1,26 @@
+{% extends "html/header.html" %}
+{% block title  %}useredit{% endblock %}
+{% block content %}
+<div class="container">
+	<div class="row">
+		<div class="col-md-2"></div>
+		<div class="col-md-8">
+			<form method="POST" info.id>
+			{% csrf_token %}
+			<input type="text" class="form-control" name="username" value="{{info.username}}" placeholder="enter username">
+			<input type="text" class="form-control" name="email" value="{{info.email}}" placeholder="enter email">
+			<input type="number" class="form-control" name="age" value="{{info.age}}" placeholder="enter age">
+			<input type="password" class="form-control" name="password"value="{{info.password}}" placeholder="enter password"> 
+			<input type="submit" value="submit">
+
+
+
+
+
+			</form>
+		</div>
+	</div>
+</div>
+
+
+{% endblock %}
